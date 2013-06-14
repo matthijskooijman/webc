@@ -589,12 +589,12 @@ Description: X11 miscellaneous micro-utility library
 Package: initramfs-tools
 Priority: optional
 Section: utils
-Installed-Size: 324
+Installed-Size: 325
 Maintainer: Progress Linux Maintainers <maintainers@lists.progress-linux.org>
 Bugs: mailto:bugs@lists.progress-linux.org
 Architecture: all
 Multi-Arch: foreign
-Version: 0.110-0baureo+1
+Version: 0.111-0baureo+1
 Provides: linux-initramfs-tool
 Depends: klibc-utils (>= 2.0-1~), cpio, kmod | module-init-tools, udev
 Pre-Depends: dpkg-lzip
@@ -602,7 +602,7 @@ Recommends: busybox (>= 1:1.01-3) | busybox-initramfs | busybox-static
 Suggests: bash-completion
 Breaks: console-setup (<< 1.72), cryptsetup (<< 2:1.1.0-2.1), elilo (<< 3.12-3.1~), lilo (<< 22.8-8.2~), s390-tools (<< 1.8.3-2~)
 Conflicts: usplash (<< 0.5.50)
-Size: 87524
+Size: 87846
 Description: generic modular initramfs generator
  This package contains tools to create a bootable initramfs for Linux kernel
  packages. The initramfs is a compressed cpio archive. At boot time, the
@@ -982,16 +982,16 @@ Homepage: http://directory.fsf.org/project/gdbm/
 Package: libavcodec53
 Priority: optional
 Section: libs
-Installed-Size: 15244
+Installed-Size: 15249
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: i386
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.5-1
+Version: 6:0.8.6-1
 Depends: libavutil51 (>= 6:0.8.3-1~), libc6 (>= 2.7), libdirac-encoder0, libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 1.0), libva1 (>> 1.0.15~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx1 (>= 1.0.0), libx264-123, libxvidcore4 (>= 1.2.2), zlib1g (>= 1:1.2.0)
 Pre-Depends: multiarch-support
 Breaks: libavcodec-extra-53, mplayer (<< 2:1.0~rc4.dfsg1+svn34540-1~)
-Size: 3182330
+Size: 3189678
 Description: Libav codec library
  Libav is a complete, cross-platform solution to decode, encode, record,
  convert and stream audio and video.
@@ -4413,11 +4413,11 @@ Installed-Size: 192
 Maintainer: Marco d'Itri <md@linux.it>
 Architecture: i386
 Multi-Arch: foreign
-Version: 9-2
+Version: 9-3
 Replaces: module-init-tools (<< 4)
 Depends: libc6 (>= 2.8), libkmod2 (>= 6~), lsb-base (>= 3.0-6)
 Breaks: module-init-tools (<< 4)
-Size: 59900
+Size: 59808
 Description: tools for managing Linux kernel modules
  This package contains a set of programs for loading, inserting, and
  removing kernel modules for Linux.
@@ -5330,10 +5330,10 @@ Bugs: mailto:bugs@lists.progress-linux.org
 Architecture: i386
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.7-0baureo1
+Version: 0.9.7.8-0baureo1
 Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.2), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
 Pre-Depends: dpkg-lzip, multiarch-support
-Size: 152106
+Size: 152258
 Description: deb package format runtime library
  This library provides methods to query and extract information
  from deb packages. This includes the control data and the package
@@ -5342,8 +5342,8 @@ Original-Maintainer: APT Development Team <deity@lists.debian.org>
 Original-Uploaders: Michael Vogt <mvo@debian.org>, Otavio Salvador <otavio@debian.org>,
  Christian Perrier <bubulle@debian.org>, Daniel Burrows <dburrows@debian.org>,
  Julian Andres Klode <jak@debian.org>
-Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/debian-sid/
-Original-Vcs-Bzr: http://bzr.debian.org/apt/debian-sid/
+Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/debian-wheezy/
+Original-Vcs-Bzr: http://bzr.debian.org/apt/debian-wheezy/
 Uploaders: Daniel Baumann <daniel.baumann@progress-linux.org>
 
 Package: gsfonts
@@ -10577,8 +10577,8 @@ Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.
 Architecture: i386
 Multi-Arch: same
 Source: avahi
-Version: 0.6.31-1
-Size: 137246
+Version: 0.6.31-2
+Size: 131970
 Description: Avahi common data files
  Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
  It allows programs to publish and discover services and hosts
@@ -11224,10 +11224,10 @@ Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.
 Architecture: i386
 Multi-Arch: same
 Source: avahi
-Version: 0.6.31-1
+Version: 0.6.31-2
 Depends: libc6 (>= 2.4), libavahi-common-data
 Pre-Depends: multiarch-support
-Size: 55054
+Size: 55132
 Description: Avahi common library
  Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
  It allows programs to publish and discover services and hosts
@@ -11772,13 +11772,13 @@ Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alio
 Architecture: i386
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.5-1
+Version: 6:0.8.6-1
 Replaces: libavutil-extra-51
 Provides: libavutil-extra-51
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Breaks: libavutil-extra-51 (<< 5:0.8.1-2)
-Size: 106688
+Size: 107462
 Description: Libav utility library
  Libav is a complete, cross-platform solution to decode, encode, record,
  convert and stream audio and video.
@@ -12946,18 +12946,18 @@ Description: The Vorbis General Audio Compression Codec (Decoder library)
 Package: libavformat53
 Priority: optional
 Section: libs
-Installed-Size: 2398
+Installed-Size: 2399
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: i386
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.5-1
+Version: 6:0.8.6-1
 Replaces: libavformat-extra-53
 Provides: libavformat-extra-53
-Depends: libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.5), libavutil51 (>= 6:0.8.3-1~), libbz2-1.0, libc6 (>= 2.7), libgnutls26 (>= 2.12.17-0), librtmp0 (>= 2.3), zlib1g (>= 1:1.1.4)
+Depends: libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.6), libavutil51 (>= 6:0.8.3-1~), libbz2-1.0, libc6 (>= 2.7), libgnutls26 (>= 2.12.17-0), librtmp0 (>= 2.3), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
 Breaks: libavformat-extra-53 (<< 5:0.8.1-2)
-Size: 588660
+Size: 590436
 Description: Libav file format library
  Libav is a complete, cross-platform solution to decode, encode, record,
  convert and stream audio and video.
@@ -13100,15 +13100,15 @@ Homepage: http://gcc.gnu.org/
 Package: libavahi-client3
 Priority: optional
 Section: libs
-Installed-Size: 138
+Installed-Size: 134
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: i386
 Multi-Arch: same
 Source: avahi
-Version: 0.6.31-1
+Version: 0.6.31-2
 Depends: libavahi-common3 (>= 0.6.22), libc6 (>= 2.4), libdbus-1-3 (>= 1.1.1)
 Pre-Depends: multiarch-support
-Size: 58806
+Size: 58690
 Description: Avahi client library
  Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
  It allows programs to publish and discover services and hosts
